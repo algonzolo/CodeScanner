@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct ScannedItemDetailView: View {
-    let item: ScannedItem
+    @ObservedObject var item: ScannedItem
     @State private var showShare = false
 
     var body: some View {

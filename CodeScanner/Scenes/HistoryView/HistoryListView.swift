@@ -44,7 +44,7 @@ struct HistoryListView: View {
 }
 
 private struct HistoryRow: View {
-    let item: ScannedItem
+    @ObservedObject var item: ScannedItem
 
     var body: some View {
         HStack {
